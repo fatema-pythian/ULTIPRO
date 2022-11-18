@@ -1,0 +1,21 @@
+_schema-version: "2.1"
+ID: ULTIPRO
+version: 0.0.1
+modules:
+- name: db
+  type: hdb
+  path: db
+  requires:
+  - name: HDI_ULTIPRO
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+resources:
+- name: HDI_ULTIPRO
+  type: com.sap.xs.hdi-container
+  parameters:
+    service-name: HDI_ULTIPRO
+    config:
+      schema: ULTIPRO
+      makeUniqueName: false
+  properties:
+    hdi-container-name: ${service-name}
