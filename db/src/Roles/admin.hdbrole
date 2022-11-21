@@ -1,0 +1,19 @@
+{
+    "role": {
+      "name": "admin#",
+      "schema_privileges": [
+        {
+          "privileges_with_grant_option": [
+            "CREATE ANY",
+            "DELETE",
+            "EXECUTE",
+            "INSERT",
+            "SELECT",
+            "SELECT CDS METADATA",
+            "SELECT METADATA",
+            "UPDATE"
+          ]
+        }
+      ]
+    }
+  }
