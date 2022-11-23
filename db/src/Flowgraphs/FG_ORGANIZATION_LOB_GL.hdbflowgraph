@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:id="ff4da86cbe41c6031c40f045bf3afeba" name="FG_ORGANIZATION_LOB_GL" runtimeBehavior="BATCH_TASK" targetSchema="ULTIPRO">
+  <annotations xmi:id="0cb2edb0ce67c960160e509b20b9b6bf" key="sap.afm.layout">
+    <annotations xmi:id="77a93c02ff6e003f5b08c70b2d92ea2a" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="6cd4b7a185d5afcfcce2f287615aa34f" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="d4ab7295b051bd06985340c82731f1ec" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="6c17f5f2af15a406f73b6a3face3470c" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="c4d5233ebfb516feb11c44af67cbbd54" key="sap.afm.palette">
+    <annotations xmi:id="6578240c47a618406f895597ee2c4178" key="additions" value="">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="2ae53651d4205aa6b49c85fc4ca8b373" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="b6d563aa8793a3131d5ae6c9c04dbe98" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="58beccb5d76599a25af65c76bcee92a4" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="ad16e9809ea1d16c26f69d7ac31c25f1" name="GetJOrganizationLOBGLs" type="VIRTUAL_FUNCTION" authoringSchemaName="ULTIPRO_VIRTUAL" catalogObjectName="GetJOrganizationLOBGLs" truncateTable="false">
+    <annotations xmi:id="8fa61b7095220ce76cea6aef5caf99b6" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="7a83c67deba6a4b4267cdcd3104a0716" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="2c9bc90779aecf86af11bbbe130c59de" key="sap.afm.layout">
+      <annotations xmi:id="71dd9d16e6fe0d4721754dd690737292" key="x" value="152">
+      </annotations>
+      <annotations xmi:id="3969bc1cd1769f3d8bc3090ad1c8ffa8" key="y" value="68">
+      </annotations>
+      <annotations xmi:id="28776890d429940248f8607410c75f42" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="ba1aec7f4dc873380a48f7008bdfe62a" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="c1169cd2a42565a88d09b326e24a02f2" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="09a157ca0bea877a4f78939c5dc02e6d" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="f4b01256590db433d2c8b1fc0723f09f" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="8f75ee806e3a36312612ed3b6dd61290" key="sap.im.customParameters" value="">
+      <annotations xmi:id="7d96a1b783956e87cf3abc34e2f2b3d3" key="SOAP_REQUEST" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:out=&quot;http://www.outsystems.com&quot;&gt;  &lt;Body&gt;    &lt;out:GetJOrganizationLOBGLs&gt;      &lt;out:Username&gt;sac_service_account&lt;/out:Username&gt;      &lt;out:Password&gt;ENTEReCAMOXi&lt;/out:Password&gt;    &lt;/out:GetJOrganizationLOBGLs&gt;  &lt;/Body&gt;&lt;/soapenv:Envelope&gt;">
+      </annotations>
+    </annotations>
+    <outputs name="GetJOrganizationLOBGLs_Output" kind="TABLE" xmi:id="6f202e2b313d20a95336db3918daa9aa">
+      <attributes xmi:id="6bb44e7d2d5b9750eeb55af64d4756ec" name="SOAP_HEADERS" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="f31dc3ba67f18547768b03e6785ca8d2" name="SOAP_FAULT" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="0c15bfd8adf143c00db1dbe0000a95ca" name="SOAP_BODY" type="NCLOB" length="2147483647" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:HierarchicalNode" xmi:id="0ac212de6091a8305420a1cd4f0399e4" name="ORGANIZATION_LOB_GL">
+    <annotations xmi:id="8dba16b801f2c058631ea623fb066307" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="4043313a6bcdd4793956ca3e9efbb8e2" key="sap.afm.layout">
+      <annotations xmi:id="ffdb690270250761d61a2b7601675d95" key="x" value="423">
+      </annotations>
+      <annotations xmi:id="8337a9ecd4d6da32d202f02ca0770fc7" key="y" value="63">
+      </annotations>
+      <annotations xmi:id="977d8ced6d8545949cf17cf2745e63f7" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="1dac02412ccf9a8d16fdb3d5ce9473af" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="bbb5a2656b28e60f3b183c8eca95b923" key="sap.afm.nodeType" value="HierarchicalNode">
+    </annotations>
+    <annotations xmi:id="a87596c4e0ce9386ec57402ef1aa8790" key="sap.afm.nodeInputs">
+      <annotations/>
+    </annotations>
+    <annotations xmi:id="6da7766a7fd98bc573982b8ccfc6c929" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="c9fae70180c2902ac97cc0905ac24310" key="ORGANIZATION_LOB_GL" value="Template_ORGANIZATION_LOB_GL_Input">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="ad3c24728c81cff33936af330ed29122" key="sap.im.propertyGroups">
+      <annotations xmi:id="796ae5cfb57873592fe1c2ce279e21a0" key="JSXSD" value="{&quot;GetJOrganizationLOBGLsSoapOut&quot;: {&quot;_SAP_NS:ns0&quot;:&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;,&quot;_SAP_NS:ns1&quot;:&quot;http://www.outsystems.com&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns0&quot;,&quot;GetJOrganizationLOBGLsResponse&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;Result&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;OrganizationLOBGL&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;src_organization_LOB_GL&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MaxOccs&quot;:-1,&quot;_SAP_MinOccs&quot;:0,&quot;Company_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Company_GL_Seg&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_1_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_1_GL_Seg&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_2_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_2_GL_Seg&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_3_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_3_GL_Seg&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_4_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_Level_4_GL_Seg&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;GL_Mask&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;}}}}}}}">
+      </annotations>
+      <annotations xmi:id="09fbe5fb882e9ce070745cb76b3b16a0" key="settings" value="&lt;hierarchicalTable elementName=&quot;GetJOrganizationLOBGLsSoapOut&quot; xPath=&quot;/ns0:GetJOrganizationLOBGLsSoapOut/&quot; namespacePrefix=&quot;ns0&quot; namespace=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;GetJOrganizationLOBGLsResponse&quot; xPath=&quot;/ns0:GetJOrganizationLOBGLsSoapOut/ns1:GetJOrganizationLOBGLsResponse/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Result&quot; xPath=&quot;/ns0:GetJOrganizationLOBGLsSoapOut/ns1:GetJOrganizationLOBGLsResponse/ns1:Result/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;OrganizationLOBGL&quot; xPath=&quot;/ns0:GetJOrganizationLOBGLsSoapOut/ns1:GetJOrganizationLOBGLsResponse/ns1:Result/ns1:OrganizationLOBGL/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;src_organization_LOB_GL&quot; xPath=&quot;/ns0:GetJOrganizationLOBGLsSoapOut/ns1:GetJOrganizationLOBGLsResponse/ns1:Result/ns1:OrganizationLOBGL/ns1:src_organization_LOB_GL/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot; outputName=&quot;ORGANIZATION_LOB_GL&quot;&gt;&lt;hierarchicalColumn elementName=&quot;Company_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Company_GL_Seg&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_1_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_1_GL_Seg&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_2_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_2_GL_Seg&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_3_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_3_GL_Seg&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_4_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_Level_4_GL_Seg&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;GL_Mask&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;/hierarchicalTable&gt;">
+      </annotations>
+    </annotations>
+    <inputs xmi:id="8c52476ac6d7c44c13313b5a3b21ecf9" name="ORGANIZATION_LOB_GL_Input1">
+      <attributes xmi:id="b3ebadcb44e6ca85f937498f19c18ca5" name="SOAP_HEADERS" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="a6b689fdcae5e5aaa5938fa478c06a5d" name="SOAP_FAULT" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="23f147ad1ee11e33b05f0115b08b7a6a" name="SOAP_BODY" type="NCLOB" nullable="true" length="2147483647" scale="0" mappedName="XML">
+      </attributes>
+    </inputs>
+    <outputs name="ORGANIZATION_LOB_GL" kind="TABLE" xmi:id="603ee44bf67b879e57ac6b1c7260c5cc">
+      <attributes xmi:id="384ef5111844a17d58c2a9d57c7abf76" name="TASK_ID" mappedName="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="b47165c2bf268b63a6710e2dcef120fd" name="ROW_ID" mappedName="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="10e1f40e87075c8583c494b244f70878" name="PARENT_KEY" mappedName="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="9157fa653fa25b163198be9307d674cb" name="KEY" mappedName="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="c1296832271576360b90c7a5efc9e92f" name="COMPANY_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Company_Code">
+      </attributes>
+      <attributes xmi:id="16a593662bdfa956b52fa52bc4134614" name="COMPANY_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Company_GL_Seg">
+      </attributes>
+      <attributes xmi:id="d31fe303d7caa55ab140e649d375cf32" name="ORG_LEVEL1_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_1_Code">
+      </attributes>
+      <attributes xmi:id="617fccf017f30b0d6db22008e68a26f9" name="ORG_LEVEL1_GL_SEG" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_1_GL_Seg">
+      </attributes>
+      <attributes xmi:id="12d00e0e0fc97c3e471cffb7d2672060" name="ORG_LEVEL2_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_2_Code">
+      </attributes>
+      <attributes xmi:id="73a7dee21956c670098e7219509803c6" name="ORG_LEVEL2_GL_SEG" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_2_GL_Seg">
+      </attributes>
+      <attributes xmi:id="ceb0ca0f47f8ffedb46c4579e750d4c8" name="ORG_LEVEL3_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_3_Code">
+      </attributes>
+      <attributes xmi:id="136f87aa20cb002166b0a6e1ba014e6f" name="ORG_LEVEL3_GL_SEG" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_3_GL_Seg">
+      </attributes>
+      <attributes xmi:id="7d7382a86418cd9d84001c6c4d12e1a7" name="ORG_LEVEL4_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_4_Code">
+      </attributes>
+      <attributes xmi:id="22896fa4ad2dd7fe0834fbee7c836a98" name="ORG_LEVEL4_GL_SEG" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_Level_4_GL_Seg">
+      </attributes>
+      <attributes xmi:id="917ce5c8de7f6d7eacc9de791e2132a7" name="GL_MASK" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:GL_Mask">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="e3150cffaa546cac694c582ef54b2be3" name="Template_ORGANIZATION_LOB_GL" type="TEMPLATE_TABLE" authoringSchemaName="ULTIPRO" catalogObjectName="ORGANIZATION_LOB_GL" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="340960e668f3b3340932945232dc0788" key="sap.afm.layout">
+      <annotations xmi:id="fe76cda327301621c9aae9553755824b" key="x" value="705">
+      </annotations>
+      <annotations xmi:id="4627bde9dae6c2ae727e95cead32bc1c" key="y" value="88">
+      </annotations>
+      <annotations xmi:id="fb8f6d886bfa33d6d4378fd5f523e43c" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="e5a83b8abb97cf497cdb66e3679b687e" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="658c9fa98c921d95964300305ff17f38" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="0017ca1e8e78e818a1ef84cc1695154e" key="sap.afm.nodeInputs">
+      <annotations xmi:id="4496ea9897b030cdd7caeea8278eb82c" key="Template_ORGANIZATION_LOB_GL_Input" value="ORGANIZATION_LOB_GL">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="4efe82e5d3ee4b0324f21ab95fa5245d" key="sap.afm.nodeOutputs">
+      <annotations/>
+    </annotations>
+    <annotations xmi:id="bdbeff022b7fd5d1b95acf63fcd7fa52" key="sap.im.historyTable" value="">
+    </annotations>
+    <inputs name="Template_ORGANIZATION_LOB_GL_Input" kind="TABLE" xmi:id="23405d1fef9b594e1f8209451a147925">
+      <attributes xmi:id="d345f1cb3a5a5573f6104f0448ed04de" name="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="3bd755d7c29e5442a2bbbfa5fc2fe9a0" name="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="b1dc5143bb2a4d4c6575d0482f887d98" name="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="10ed02293b36f8cdb8e4115fc4570645" name="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="a955e41b4e1a92dbbeb612832f30d97e" name="COMPANY_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="f60d7d9f8b29591c04d604b21b3e1119" name="COMPANY_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="d807d0052d2a5262f3f2c269f954e914" name="ORG_LEVEL1_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="2e6a18184382536b5e4abba000b2a110" name="ORG_LEVEL1_GL_SEG" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="e89d94895a41d456312a49b5fa15b914" name="ORG_LEVEL2_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="2cf70a70ee3130fe249030e26274d777" name="ORG_LEVEL2_GL_SEG" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="fd03cde8121e8f81b190f8a798288923" name="ORG_LEVEL3_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="77a8f36ae653176ed0e732820ba9c171" name="ORG_LEVEL3_GL_SEG" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="2b491deca42965571e032e7a1e899eed" name="ORG_LEVEL4_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="c4678ee352c132de71be17cd6ba9905e" name="ORG_LEVEL4_GL_SEG" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="7287f5b2365394fa8a50e0c705b7cfd2" name="GL_MASK" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+    </inputs>
+  </nodes>
+  <tableMappings xmi:id="bbee1f5cca5cbb8837177dc14c1c19d8" source="6f202e2b313d20a95336db3918daa9aa" target="8c52476ac6d7c44c13313b5a3b21ecf9">
+    <attributeMappings source="6bb44e7d2d5b9750eeb55af64d4756ec" target="b3ebadcb44e6ca85f937498f19c18ca5" xmi:id="310c9ea6fd2b414def39c8a74146b43d">
+    </attributeMappings>
+    <attributeMappings source="f31dc3ba67f18547768b03e6785ca8d2" target="a6b689fdcae5e5aaa5938fa478c06a5d" xmi:id="bdad1c7294f2e89ac343f45fdb7435ae">
+    </attributeMappings>
+    <attributeMappings source="0c15bfd8adf143c00db1dbe0000a95ca" target="23f147ad1ee11e33b05f0115b08b7a6a" xmi:id="14fd5b2fc4c5d6091f9ef92429508926">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="60cb6bea37b03e6e1ce5da3ae2b01976" source="603ee44bf67b879e57ac6b1c7260c5cc" target="23405d1fef9b594e1f8209451a147925">
+    <attributeMappings source="384ef5111844a17d58c2a9d57c7abf76" target="d345f1cb3a5a5573f6104f0448ed04de" xmi:id="69e6019746b058e794f8dfd7e29f8467">
+    </attributeMappings>
+    <attributeMappings source="b47165c2bf268b63a6710e2dcef120fd" target="3bd755d7c29e5442a2bbbfa5fc2fe9a0" xmi:id="85a239b45257626f83c4f9d773fe99cf">
+    </attributeMappings>
+    <attributeMappings source="10e1f40e87075c8583c494b244f70878" target="b1dc5143bb2a4d4c6575d0482f887d98" xmi:id="67f7afe59a35ed28357a37aa60e3d411">
+    </attributeMappings>
+    <attributeMappings source="9157fa653fa25b163198be9307d674cb" target="10ed02293b36f8cdb8e4115fc4570645" xmi:id="3080fecb2c898658e777e3d1f0545733">
+    </attributeMappings>
+    <attributeMappings source="c1296832271576360b90c7a5efc9e92f" target="a955e41b4e1a92dbbeb612832f30d97e" xmi:id="7372eb8c4c6b55ccebcb8f59b6138fb4">
+    </attributeMappings>
+    <attributeMappings source="16a593662bdfa956b52fa52bc4134614" target="f60d7d9f8b29591c04d604b21b3e1119" xmi:id="bfeb7c402d5bd6f63c08a44a78c6da0a">
+    </attributeMappings>
+    <attributeMappings source="d31fe303d7caa55ab140e649d375cf32" target="d807d0052d2a5262f3f2c269f954e914" xmi:id="dc2283d3e66b1ddc6b7adbe95958f5f9">
+    </attributeMappings>
+    <attributeMappings source="617fccf017f30b0d6db22008e68a26f9" target="2e6a18184382536b5e4abba000b2a110" xmi:id="b87c8330e9443f659775220ff939e40d">
+    </attributeMappings>
+    <attributeMappings source="12d00e0e0fc97c3e471cffb7d2672060" target="e89d94895a41d456312a49b5fa15b914" xmi:id="7cee138d03fa4109dac08a2b2f666992">
+    </attributeMappings>
+    <attributeMappings source="73a7dee21956c670098e7219509803c6" target="2cf70a70ee3130fe249030e26274d777" xmi:id="ed936d9ce47f56d0304f055a88e74ed0">
+    </attributeMappings>
+    <attributeMappings source="ceb0ca0f47f8ffedb46c4579e750d4c8" target="fd03cde8121e8f81b190f8a798288923" xmi:id="b924bceca306cea971f3012f48edc20d">
+    </attributeMappings>
+    <attributeMappings source="136f87aa20cb002166b0a6e1ba014e6f" target="77a8f36ae653176ed0e732820ba9c171" xmi:id="9b113f9fb7eae5707dd87e1710f618ca">
+    </attributeMappings>
+    <attributeMappings source="7d7382a86418cd9d84001c6c4d12e1a7" target="2b491deca42965571e032e7a1e899eed" xmi:id="343d6be527b3a39b5b3a9c73bb38ab6b">
+    </attributeMappings>
+    <attributeMappings source="22896fa4ad2dd7fe0834fbee7c836a98" target="c4678ee352c132de71be17cd6ba9905e" xmi:id="5a15070d3e71927ae63b011b08439705">
+    </attributeMappings>
+    <attributeMappings source="917ce5c8de7f6d7eacc9de791e2132a7" target="7287f5b2365394fa8a50e0c705b7cfd2" xmi:id="aa1f463a911cd7d83c93a7e2d9c3c3b5">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

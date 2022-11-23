@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="7e427ac4c120ad37578f70c046fdc5b4" name="FG_SUMMARY_DEDUCTIONS" runtimeBehavior="BATCH_TASK" targetSchema="ULTIPRO">
+  <annotations xmi:id="6b5c8a1c33896ea24521e4cede1a541d" key="sap.afm.layout">
+    <annotations xmi:id="3c976207024462e013666a346d89c74f" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="42bbb98d0f2490dcc816e693e4cd99c4" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="fee0f995dc470602441abae60d05d60c" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="1e7b92354fca8387424b1fe65592e054" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="395595f30cf846dab14db1980697258a" key="sap.afm.palette">
+    <annotations xmi:id="21aa35296d9c487badf4b5e938c4df74" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="5412053ee8a3831087b0de0720623c24" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="6a043d081a2cbad0caf0582e322ec2e0" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="aa4eb1e66d4790188d660274d2609ff6" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="3d070aaaf6d55c125c4a744290bfc851" name="GetSummaryDeductions" type="VIRTUAL_FUNCTION" authoringSchemaName="ULTIPRO_VIRTUAL" catalogObjectName="GetSummaryDeductions" truncateTable="false">
+    <annotations xmi:id="d141ca12420e4f61faa9b1a6774be7ea" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="d1c12c572a5013710bfa7d3305981d0f" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="e806820476ad69d9f2ca143a7416988e" key="sap.afm.layout">
+      <annotations xmi:id="1681be29b05217fd6a08b66b0ff84674" key="x" value="129">
+      </annotations>
+      <annotations xmi:id="891126123abdad3f06f4ffc1799cf9bb" key="y" value="65">
+      </annotations>
+      <annotations xmi:id="0c8acb6053daa2392c97adf8b7ab85ec" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="6df2dbc642da6afe315deb88e2d3b4b9" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="22d6d7cf7d2ffb274da01597cc750229" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="4bffad1bd35ea274f5aa096bb2c5c9ed" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="d831db735676bb135509b1f1288e2d7d" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="fe1939dadc72e315aed358204e083d96" key="sap.im.customParameters" value="">
+      <annotations xmi:id="fc87e63557beb4117c3b60c36b7f7411" key="SOAP_REQUEST" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:out=&quot;http://www.outsystems.com&quot;&gt;  &lt;Body&gt;    &lt;out:GetSummaryDeductions&gt;      &lt;out:NumberOfDays&gt;365&lt;/out:NumberOfDays&gt;      &lt;out:Username&gt;sac_service_account&lt;/out:Username&gt;      &lt;out:Password&gt;ENTEReCAMOXi&lt;/out:Password&gt;    &lt;/out:GetSummaryDeductions&gt;  &lt;/Body&gt;&lt;/soapenv:Envelope&gt;">
+      </annotations>
+    </annotations>
+    <outputs name="GetSummaryDeductions_Output" kind="TABLE" xmi:id="4a24009a0cf5ece125cc7572b1df4113">
+      <attributes xmi:id="b94aaee6bb9cbc3a849bae23523c8d5b" name="SOAP_HEADERS" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="bd424128af76ca4b5cbd82b9bacd5ae3" name="SOAP_FAULT" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="fe24fb43b35d4395663a93cea77bc6b8" name="SOAP_BODY" type="NCLOB" length="2147483647" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:HierarchicalNode" xmi:id="e50a69d8f5fb574f81feac32b1db32ca" name="SUMMARY_DEDUCTIONS">
+    <annotations xmi:id="3f04ad53cfcd540f3d162b974f9fc004" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="c9237a4f9ebf06baddf7f2c26a1062ea" key="sap.afm.layout">
+      <annotations xmi:id="f92a210dbc6b7ba8bb0bd4546ee6f5d9" key="x" value="259">
+      </annotations>
+      <annotations xmi:id="18073d17ee08607dfe145e3f1e2e3bf1" key="y" value="65">
+      </annotations>
+      <annotations xmi:id="2c06d847b8402a2c42109ddd791e016f" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="18c2d3e8d87cd7b4f0e480df5c030500" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="bd884949a1a5ca91858a865f78cc4734" key="sap.afm.nodeType" value="HierarchicalNode">
+    </annotations>
+    <annotations xmi:id="14bfd5f57ab89bd8cf77411202176a90" key="sap.afm.nodeInputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="6ef91aeb0f2c4072793ed44b75d4c570" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="c84b6226b36c7ca576d0aa91ffced1d2" key="SUMMARY_DEDUCTIONS" value="Template_SUMMARY_DEDUCTIONS_Input"/>
+    </annotations>
+    <annotations xmi:id="28b6a85e039439f07fe47c03d3d13704" key="sap.im.propertyGroups">
+      <annotations xmi:id="1573dc3491417ffd3d50bfa323e4bb7f" key="JSXSD" value="{&quot;GetSummaryDeductionsSoapOut&quot;: {&quot;_SAP_NS:ns0&quot;:&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;,&quot;_SAP_NS:ns1&quot;:&quot;http://www.outsystems.com&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns0&quot;,&quot;GetSummaryDeductionsResponse&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;Result&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;SummaryDeduction&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;Lsrc_fct_payroll_summary_deductions&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MaxOccs&quot;:-1,&quot;_SAP_MinOccs&quot;:0,&quot;Period_end_date&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;date&quot;},&quot;Pay_date&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;date&quot;},&quot;Company_code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Deduction_code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Employee_number&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Job_code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_2_gl_segment&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Org_4_gl_segment&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Base_account_code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Sequence_code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Current_amount&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;}}}}}}}">
+      </annotations>
+      <annotations xmi:id="a3fa64661ab56b4b8b73be98f273ec53" key="settings" value="&lt;hierarchicalTable elementName=&quot;GetSummaryDeductionsSoapOut&quot; xPath=&quot;/ns0:GetSummaryDeductionsSoapOut/&quot; namespacePrefix=&quot;ns0&quot; namespace=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;GetSummaryDeductionsResponse&quot; xPath=&quot;/ns0:GetSummaryDeductionsSoapOut/ns1:GetSummaryDeductionsResponse/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Result&quot; xPath=&quot;/ns0:GetSummaryDeductionsSoapOut/ns1:GetSummaryDeductionsResponse/ns1:Result/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;SummaryDeduction&quot; xPath=&quot;/ns0:GetSummaryDeductionsSoapOut/ns1:GetSummaryDeductionsResponse/ns1:Result/ns1:SummaryDeduction/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Lsrc_fct_payroll_summary_deductions&quot; xPath=&quot;/ns0:GetSummaryDeductionsSoapOut/ns1:GetSummaryDeductionsResponse/ns1:Result/ns1:SummaryDeduction/ns1:Lsrc_fct_payroll_summary_deductions/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot; outputName=&quot;SUMMARY_DEDUCTIONS&quot;&gt;&lt;hierarchicalColumn elementName=&quot;Period_end_date&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Pay_date&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Company_code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Deduction_code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Employee_number&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Job_code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_2_gl_segment&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Org_4_gl_segment&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Base_account_code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Sequence_code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Current_amount&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;/hierarchicalTable&gt;">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="446f1e8742544baae2056b81e0359013" key="sap.im.transform.jit" value="true">
+    </annotations>
+    <inputs xmi:id="33e1bc81da5caffabb5d7698df812b79" name="SUMMARY_DEDUCTIONS_Input1">
+      <attributes xmi:id="74e4065293194485f32180ddde57e0ce" name="SOAP_HEADERS" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="c9ed76740b79f60d27fec76852fde4e9" name="SOAP_FAULT" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="37a1c5fda9338e5c95b997ba4add352a" name="SOAP_BODY" type="NCLOB" nullable="true" length="2147483647" scale="0" mappedName="XML">
+      </attributes>
+    </inputs>
+    <outputs name="SUMMARY_DEDUCTIONS" kind="TABLE" xmi:id="1d3950709b9207c54be1da89229f9e3a">
+      <attributes xmi:id="bc5bca015f7dc1fe0722a7bb5e0b1e0e" name="TASK_ID" mappedName="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="02ed9f03f38c87e0a1bd19883e2e8201" name="ROW_ID" mappedName="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="0cfd1ca74dadeb673b2e14b684ab706f" name="PARENT_KEY" mappedName="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="2f9a153a2859a07704957c00dd931c4d" name="KEY" mappedName="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="ad1a15c63ff2b4b62cbc2de2a9b0c48a" name="PERIOD_END_DATE" type="DATE" nullable="true" mappedName="ns1:Period_end_date">
+      </attributes>
+      <attributes xmi:id="b00dc4c405bf9b0654492c7b48dd5214" name="PAY_DATE" type="DATE" nullable="true" mappedName="ns1:Pay_date">
+      </attributes>
+      <attributes xmi:id="2ff00f6f2630b0a6292ae19dacc83f9f" name="COMPANY_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Company_code">
+      </attributes>
+      <attributes xmi:id="f4a23260ec1209af485c15dd63863f4c" name="DEDUCTION_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Deduction_code">
+      </attributes>
+      <attributes xmi:id="4d9694360b5ba2cb093013778df7ba36" name="EMPLOYEE_NUMBER" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Employee_number">
+      </attributes>
+      <attributes xmi:id="38bb5f0409f281b05bcea7f97097f92e" name="JOB_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Job_code">
+      </attributes>
+      <attributes xmi:id="528e30d28963521db1f395c43c22b365" name="ORG2_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_2_gl_segment">
+      </attributes>
+      <attributes xmi:id="9319bb39d056f7f111865f2abf43efe1" name="ORG4_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Org_4_gl_segment">
+      </attributes>
+      <attributes xmi:id="0eabb8747412d4b925f61ceb2cb380e4" name="BASE_ACCOUNT_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Base_account_code">
+      </attributes>
+      <attributes xmi:id="fad3b66230cb67d3000872cd093ba738" name="SEQUENCE_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Sequence_code">
+      </attributes>
+      <attributes xmi:id="3c499628771aa57f4fab8c3bebc6e271" name="CURRENT_AMOUNT" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:Current_amount">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="747f368906e7c802c170f6eee78b9563" name="Template_SUMMARY_DEDUCTIONS" type="TEMPLATE_TABLE" authoringSchemaName="ULTIPRO" catalogObjectName="SUMMARY_DEDUCTIONS" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="0e85f90739e65c1bca84cf24b209d05c" key="sap.afm.layout">
+      <annotations xmi:id="a85bf59039459a9b194826f94f9c901a" key="x" value="472">
+      </annotations>
+      <annotations xmi:id="79bab6386509aa00e7c45d852c4caeea" key="y" value="80">
+      </annotations>
+      <annotations xmi:id="451e21256b0bc5045d134549029d0642" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="2a7fe0c02b92ead7d0ea8861b0cc58bd" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="c09cfcf5ec468676a4d47cae4969e016" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="246ea5814da5564c7427a28f0745ca78" key="sap.afm.nodeInputs">
+      <annotations xmi:id="d3d90a968e5f885834e818abd9f1c3e2" key="Template_SUMMARY_DEDUCTIONS_Input" value="SUMMARY_DEDUCTIONS"/>
+    </annotations>
+    <annotations xmi:id="1d9909eb3b45fab4daaecfc5cf3dbd94" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="1ab5b00e8715d6021235af52f9a2d0c4" key="sap.im.historyTable" value="">
+    </annotations>
+    <inputs name="Template_SUMMARY_DEDUCTIONS_Input" kind="TABLE" xmi:id="2c164720937b1857840ad74895f6c8fd">
+      <attributes xmi:id="a41e1e454b240075fe93479a13f9172b" name="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="41412a0b3f40af49eb113162c55e1703" name="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="f507b82f3269009cfc813bf23370fbd2" name="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="c2d87d514685a8944f08077687e80023" name="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="30391d011e6ee2c3b4b6c37f09f1fe91" name="PERIOD_END_DATE" type="DATE" nullable="true">
+      </attributes>
+      <attributes xmi:id="d566b489232b472820de83345ccb77ca" name="PAY_DATE" type="DATE" nullable="true">
+      </attributes>
+      <attributes xmi:id="337eb5ef182a82aa8ba31aede8e09803" name="COMPANY_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="20ff8f7fb76c42d938564e3af7b227af" name="DEDUCTION_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="3b61255bf00b38d698f853b82402e8cb" name="EMPLOYEE_NUMBER" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="2506bc001ba21d9cc7853327e45f6c9f" name="JOB_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="fcbd0c5db94f36527fccc1ad141c6c90" name="ORG2_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="00eb6fac3739782c859d125490a44f94" name="ORG4_GL_SEGMENT" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="e88f9bb539311f0d89eb57b94b23fa39" name="BASE_ACCOUNT_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="daa424537a421fc09e13e27ccb90d726" name="SEQUENCE_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="a764f5a18a5dd2a2b7c72aab3bfef924" name="CURRENT_AMOUNT" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+    </inputs>
+  </nodes>
+  <tableMappings xmi:id="58e9b1a634756c5e8ec561b8863a5388" source="4a24009a0cf5ece125cc7572b1df4113" target="33e1bc81da5caffabb5d7698df812b79">
+    <attributeMappings source="b94aaee6bb9cbc3a849bae23523c8d5b" target="74e4065293194485f32180ddde57e0ce" xmi:id="3069cbf9a28b80253ec4fed6d6a43cde">
+    </attributeMappings>
+    <attributeMappings source="bd424128af76ca4b5cbd82b9bacd5ae3" target="c9ed76740b79f60d27fec76852fde4e9" xmi:id="a33a31ebf8e199c8b939c0878507fdaf">
+    </attributeMappings>
+    <attributeMappings source="fe24fb43b35d4395663a93cea77bc6b8" target="37a1c5fda9338e5c95b997ba4add352a" xmi:id="399bb5315b1978d2cfcf78be713edd46">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="8db4d831626c397e2b4485b007713fe4" source="1d3950709b9207c54be1da89229f9e3a" target="2c164720937b1857840ad74895f6c8fd">
+    <attributeMappings source="bc5bca015f7dc1fe0722a7bb5e0b1e0e" target="a41e1e454b240075fe93479a13f9172b" xmi:id="c2a4c6b3f6e079bf987b557e964592b8">
+    </attributeMappings>
+    <attributeMappings source="02ed9f03f38c87e0a1bd19883e2e8201" target="41412a0b3f40af49eb113162c55e1703" xmi:id="67bb3c167ddbedbea167f6fbdf3302ea">
+    </attributeMappings>
+    <attributeMappings source="0cfd1ca74dadeb673b2e14b684ab706f" target="f507b82f3269009cfc813bf23370fbd2" xmi:id="6601d3fdb91ce7db66c9889970d911f5">
+    </attributeMappings>
+    <attributeMappings source="2f9a153a2859a07704957c00dd931c4d" target="c2d87d514685a8944f08077687e80023" xmi:id="ec89acd09ffae1a2e6b7c220b22306c0">
+    </attributeMappings>
+    <attributeMappings source="ad1a15c63ff2b4b62cbc2de2a9b0c48a" target="30391d011e6ee2c3b4b6c37f09f1fe91" xmi:id="d8b5f8a0cd7b34a004cfe660fe3d0d3c">
+    </attributeMappings>
+    <attributeMappings source="b00dc4c405bf9b0654492c7b48dd5214" target="d566b489232b472820de83345ccb77ca" xmi:id="0160ecc9dca0f66101eae43a58173608">
+    </attributeMappings>
+    <attributeMappings source="2ff00f6f2630b0a6292ae19dacc83f9f" target="337eb5ef182a82aa8ba31aede8e09803" xmi:id="fccd4293897587eec9ec2c74fd85e7da">
+    </attributeMappings>
+    <attributeMappings source="f4a23260ec1209af485c15dd63863f4c" target="20ff8f7fb76c42d938564e3af7b227af" xmi:id="e837ca88cb3841767ca4fd2d00f6a42c">
+    </attributeMappings>
+    <attributeMappings source="4d9694360b5ba2cb093013778df7ba36" target="3b61255bf00b38d698f853b82402e8cb" xmi:id="d9e443634fb6286394ca994cc9fb058e">
+    </attributeMappings>
+    <attributeMappings source="38bb5f0409f281b05bcea7f97097f92e" target="2506bc001ba21d9cc7853327e45f6c9f" xmi:id="8f6a2ece135093c5db02c3b0c5ae40dc">
+    </attributeMappings>
+    <attributeMappings source="528e30d28963521db1f395c43c22b365" target="fcbd0c5db94f36527fccc1ad141c6c90" xmi:id="64d511274e2ee8e1a1cc3b99a828e848">
+    </attributeMappings>
+    <attributeMappings source="9319bb39d056f7f111865f2abf43efe1" target="00eb6fac3739782c859d125490a44f94" xmi:id="1899b02430755752f2d147beac2e1c23">
+    </attributeMappings>
+    <attributeMappings source="0eabb8747412d4b925f61ceb2cb380e4" target="e88f9bb539311f0d89eb57b94b23fa39" xmi:id="4dcab1f544cb2753388a75b64d891939">
+    </attributeMappings>
+    <attributeMappings source="fad3b66230cb67d3000872cd093ba738" target="daa424537a421fc09e13e27ccb90d726" xmi:id="4bf58014e5cc7f3a52adc71438f7f334">
+    </attributeMappings>
+    <attributeMappings source="3c499628771aa57f4fab8c3bebc6e271" target="a764f5a18a5dd2a2b7c72aab3bfef924" xmi:id="c1e09ed71960fd57df43ca939bfe6570">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="a539447cbe814b3fc987b0c1dad398d9" name="FG_EMPLOYEE_HOURS" runtimeBehavior="BATCH_TASK" targetSchema="ULTIPRO">
+  <annotations xmi:id="db9bb59557575c10fca2ce982925c122" key="sap.afm.layout">
+    <annotations xmi:id="f151ed6d91e4790a1fddba4587e04681" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="1adf242c1f94ecfe269d81f00a271dca" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="5398a2f913944f21b77401a989e25463" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="736bdbb0d193d8a86a0738f091e52fdb" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="8522516e07b1c2f6e1a841ec7eaf8cad" key="sap.afm.palette">
+    <annotations xmi:id="c4ee0b35ebbebd944bb5a70412fe8f78" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="20e3ced5b2d22063b77901305697348e" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="75f670c673ff5441208f5b500ef0190e" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="250a14cda3df2ef5fdd5863fa7813ef1" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="0439f51d3ad2b3237f673d76839dd078" name="TGT_EMPLOYEE_HOURS_STAGING" type="TEMPLATE_TABLE" authoringSchemaName="ULTIPRO" catalogObjectName="EMPLOYEE_HOURS_STAGING" dataLayout="COLUMN" truncateTable="true">
+    <annotations xmi:id="b1ffc40dfec3277de4f826d86984fe0b" key="sap.afm.layout">
+      <annotations xmi:id="c79880ae32dc0286e44b7d5ac88d8b58" key="x" value="519">
+      </annotations>
+      <annotations xmi:id="630186f61ab231b419039c674852dc95" key="y" value="212">
+      </annotations>
+      <annotations xmi:id="3d35bfbd95b97ecd24b26fd6200e65f1" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="bfb1b99e40b9cf2f4334baa71717f2b8" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="ceef5412cb85a2d9898376aa832c8f6c" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="08c90bcfa07932fc5b53f8f47969b8f1" key="sap.afm.nodeInputs">
+      <annotations xmi:id="fb69b1f00cd31f5e121f9316688ec568" key="TGT_EMPLOYEE_HOURS_STAGING_Input" value="EMPLOYEE_HOURS_STAGING"/>
+    </annotations>
+    <annotations xmi:id="b3033c8a990c404a1747283545b62ea6" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="8e94d0ae5d34e793fb2f7eda463df413" key="sap.im.historyTable" value="">
+    </annotations>
+    <annotations xmi:id="ac1bae256233e9e71bab958fbcb5a546" key="sap.im.writerType" value="insert">
+    </annotations>
+    <inputs name="TGT_EMPLOYEE_HOURS_STAGING_Input" kind="TABLE" xmi:id="8253dd349263b02897db64410fdf44ee">
+      <attributes xmi:id="a19fdac263c09912ec009f982ddfe915" name="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="240b767fb6fbb0b8774dea21ba31b0ba" name="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="eda69c927a93a44fde6adee1cf816b05" name="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="f2555586efc4d5c20864b52ece5a487b" name="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="05b17b9d8c9fad7d7f867d702d6e0220" name="EMPLOYEE_ID" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="aee2464e185bf4a1bb7fdcb5623aab57" name="WORK_DATE" type="DATE" nullable="true">
+      </attributes>
+      <attributes xmi:id="5277e4af8cf9c4201e5e1384d1c28990" name="IN_PUNCH" type="TIMESTAMP" nullable="true">
+      </attributes>
+      <attributes xmi:id="53b2e0ba672d10a21c82472105b6c8ef" name="OUT_PUNCH" type="TIMESTAMP" nullable="true">
+      </attributes>
+      <attributes xmi:id="a4d7434af1d856dc01dbcb5b4fcd613f" name="PAY_CODE_NUMBER" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+      <attributes xmi:id="6623a7bdb3a38a75d901032ceef8f4db" name="SCHEDULED_HOURS" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+      <attributes xmi:id="920863cc391e4f339d041b39c60228e2" name="REGULAR_HOURS" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+      <attributes xmi:id="4b7bd98b7e0f3eb3130285d5df213c2c" name="OVERTIME_HOURS" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+      <attributes xmi:id="f44a1e87371ae72fd81d7efedc64ea23" name="WORKED_HOURS" type="DECIMAL" nullable="true" length="38" scale="5">
+      </attributes>
+      <attributes xmi:id="2c863146d0a497c8624fdaca54054fbe" name="JOB_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="fd132a29e67435e5fbc3f8d7b468b78a" name="COST_CENTER" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+    </inputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="8b58ecc9ccd60096f1a2592893aab298" name="SRC_GetEmployeeHours" type="VIRTUAL_FUNCTION" authoringSchemaName="ULTIPRO_VIRTUAL" catalogObjectName="GetEmployeeHoursV2" truncateTable="false">
+    <annotations xmi:id="3ed3dbcc8d24f8ec85691d8418511e09" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="a1cc9e24ee8907289196abe9b93a4334" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="5449c84394ee62f08377cdc4ce699e75" key="sap.afm.layout">
+      <annotations xmi:id="f3ca13d7058ecf392954f26c67711c59" key="x" value="142">
+      </annotations>
+      <annotations xmi:id="e39aacf40059cbe589359db970a9911d" key="y" value="186">
+      </annotations>
+      <annotations xmi:id="c7603a4b9c1d1bc4088bbd6d9fd0d10c" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="24ffd0de2bf11de1dffe5999f2672c7c" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="5f45cd836cc159e5c97dd13a8bba3876" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="3a2ade5429d19e5632448ce6f76cafd4" key="sap.afm.nodeInputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="83ab3c0d06427654ce91ab8e801fc89a" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="2247da9cdb65a8e5782ecfe1f79dd5ae" key="sap.im.customParameters" value="">
+      <annotations xmi:id="f59cd7af5e4341700fe4637109b78435" key="SOAP_REQUEST" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:out=&quot;http://www.outsystems.com&quot;&gt;  &lt;Body&gt;    &lt;out:GetEmployeeHours&gt;      &lt;out:NumberOfDays&gt;10&lt;/out:NumberOfDays&gt;      &lt;out:Username&gt;sac_service_account&lt;/out:Username&gt;      &lt;out:Password&gt;ENTEReCAMOXi&lt;/out:Password&gt;    &lt;/out:GetEmployeeHours&gt;  &lt;/Body&gt;&lt;/soapenv:Envelope&gt;">
+      </annotations>
+    </annotations>
+    <outputs name="SRC_GetEmployeeHours_Output" kind="TABLE" xmi:id="4b7d3679c50671fb122d2e739a483df6">
+      <attributes xmi:id="bcd1f84112bb534dfd7db2084455e4b0" name="SOAP_HEADERS" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="eb1eb279242cf6484f40d1a9c4a9dc86" name="SOAP_FAULT" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="072bf0af181a3f653db171440ea53698" name="SOAP_BODY" type="NCLOB" length="2147483647" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:HierarchicalNode" xmi:id="ab84f2518e68ff313279b9493fc9aa3d" name="HIER_EmployeeHoursStaging">
+    <annotations xmi:id="dfed32eef94738dd1203c91c6f053908" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="6f53243c3e74c52b84332d114c417445" key="sap.afm.layout">
+      <annotations xmi:id="82fbbcc7a251165c171b6e31bec05ae6" key="x" value="336">
+      </annotations>
+      <annotations xmi:id="f01ee75cdc66dd13c43a6b7b484b793a" key="y" value="207">
+      </annotations>
+      <annotations xmi:id="2f1a2bd913e29031bc29d612ccf5b6f5" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="d72636f926ce2d2038bc4150eb06c22c" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="31e359090abb013cc084953235e4ed60" key="sap.afm.nodeType" value="HierarchicalNode">
+    </annotations>
+    <annotations xmi:id="9e4afcd71c187b646d5caf4c236f8d1f" key="sap.afm.nodeInputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="800bd3ed4e02ccfa32dfd2c75889fb81" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="cc52bd113c151d2ab6d2d9163e00d6b1" key="EMPLOYEE_HOURS_STAGING" value="TGT_EMPLOYEE_HOURS_STAGING_Input"/>
+    </annotations>
+    <annotations xmi:id="1459e5a9d9000c4c37fdfb00472101a7" key="sap.im.propertyGroups">
+      <annotations xmi:id="6dabf67b22c0555313e7ea32802bb5ab" key="JSXSD" value="{&quot;GetEmployeeHoursSoapOut&quot;: {&quot;_SAP_NS:ns0&quot;:&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;,&quot;_SAP_NS:ns1&quot;:&quot;http://www.outsystems.com&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns0&quot;,&quot;GetEmployeeHoursResponse&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;Result&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;EmployeeHours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;Lsrc_fct_employee_hours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MaxOccs&quot;:-1,&quot;_SAP_MinOccs&quot;:0,&quot;Employee_ID&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Work_Date&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;date&quot;},&quot;In_Punch&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;dateTime&quot;},&quot;Out_Punch&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;dateTime&quot;},&quot;pay_code_number&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;},&quot;Scheduled_Hours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;},&quot;Regular_Hours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;},&quot;Overtime_Hours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;},&quot;worked_hours&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;decimal&quot;},&quot;Job_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Cost_Center&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;}}}}}}}">
+      </annotations>
+      <annotations xmi:id="a4afe608ab84df14befcfa55a6696ef0" key="settings" value="&lt;hierarchicalTable elementName=&quot;GetEmployeeHoursSoapOut&quot; xPath=&quot;/ns0:GetEmployeeHoursSoapOut/&quot; namespacePrefix=&quot;ns0&quot; namespace=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;GetEmployeeHoursResponse&quot; xPath=&quot;/ns0:GetEmployeeHoursSoapOut/ns1:GetEmployeeHoursResponse/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Result&quot; xPath=&quot;/ns0:GetEmployeeHoursSoapOut/ns1:GetEmployeeHoursResponse/ns1:Result/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;EmployeeHours&quot; xPath=&quot;/ns0:GetEmployeeHoursSoapOut/ns1:GetEmployeeHoursResponse/ns1:Result/ns1:EmployeeHours/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Lsrc_fct_employee_hours&quot; xPath=&quot;/ns0:GetEmployeeHoursSoapOut/ns1:GetEmployeeHoursResponse/ns1:Result/ns1:EmployeeHours/ns1:Lsrc_fct_employee_hours/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot; outputName=&quot;EMPLOYEE_HOURS_STAGING&quot;&gt;&lt;hierarchicalColumn elementName=&quot;Employee_ID&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Work_Date&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;In_Punch&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Out_Punch&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;pay_code_number&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Scheduled_Hours&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Regular_Hours&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Overtime_Hours&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;worked_hours&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Job_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Cost_Center&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;/hierarchicalTable&gt;">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="ae629db28c02039af17d55d16afcc985" key="sap.im.transform.jit" value="true">
+    </annotations>
+    <inputs xmi:id="7300f9cc04234218ba4027754c71e301" name="HIER_EmployeeHoursStaging_Input1">
+      <attributes xmi:id="b2c553f4491507990079b9f3ba259d99" name="SOAP_HEADERS" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="08c6e03ee9c91db4808f07b69dfebfa5" name="SOAP_FAULT" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="8c13a96242659a68166eb6acd69b40cb" name="SOAP_BODY" type="NCLOB" nullable="true" length="2147483647" scale="0" mappedName="XML">
+      </attributes>
+    </inputs>
+    <outputs name="EMPLOYEE_HOURS_STAGING" kind="TABLE" xmi:id="45ae6e12781353ec9c59177391dcee3e">
+      <attributes xmi:id="a11a9bc579ad15caac4328c9646e3197" name="TASK_ID" mappedName="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="29375a0df16ce54b343e8ebce5e70b96" name="ROW_ID" mappedName="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="37d0545089856ca666cecd6accdd4534" name="PARENT_KEY" mappedName="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="90e6ddbb25900f924777b8f33d77894a" name="KEY" mappedName="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="becb901f72b4e8b69cae495fbdb1ebcb" name="EMPLOYEE_ID" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Employee_ID">
+      </attributes>
+      <attributes xmi:id="31c2f7cc05cafa773960615725305801" name="WORK_DATE" type="DATE" nullable="true" mappedName="ns1:Work_Date">
+      </attributes>
+      <attributes xmi:id="9b645c3324e4d45083a6c4cba97c87e2" name="IN_PUNCH" type="TIMESTAMP" nullable="true" mappedName="ns1:In_Punch">
+      </attributes>
+      <attributes xmi:id="8b746e093ad1672ac3b804baa9be590b" name="OUT_PUNCH" type="TIMESTAMP" nullable="true" mappedName="ns1:Out_Punch">
+      </attributes>
+      <attributes xmi:id="e21c0f114fffdf5be2126f346fbeda45" name="PAY_CODE_NUMBER" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:pay_code_number">
+      </attributes>
+      <attributes xmi:id="601797dd2106f584683f0b0a2c40ff62" name="SCHEDULED_HOURS" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:Scheduled_Hours">
+      </attributes>
+      <attributes xmi:id="cc3890c7137dffba2d0969d945f01634" name="REGULAR_HOURS" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:Regular_Hours">
+      </attributes>
+      <attributes xmi:id="50efe667a4227b91e01e43afcd5dca3f" name="OVERTIME_HOURS" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:Overtime_Hours">
+      </attributes>
+      <attributes xmi:id="94ec4fbcf730983679d6d91d4983a66b" name="WORKED_HOURS" type="DECIMAL" nullable="true" length="38" scale="5" mappedName="ns1:worked_hours">
+      </attributes>
+      <attributes xmi:id="8456f3d8d984e5dfca816207a5ca15ec" name="JOB_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Job_Code">
+      </attributes>
+      <attributes xmi:id="bc17e22b58870ffadd0e79839c099144" name="COST_CENTER" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Cost_Center">
+      </attributes>
+    </outputs>
+  </nodes>
+  <tableMappings xmi:id="63781c6142df38b6b2f4bdceb03027ec" source="4b7d3679c50671fb122d2e739a483df6" target="7300f9cc04234218ba4027754c71e301">
+    <attributeMappings source="bcd1f84112bb534dfd7db2084455e4b0" target="b2c553f4491507990079b9f3ba259d99" xmi:id="fc977b936ba875ae3315e47b3619273f">
+    </attributeMappings>
+    <attributeMappings source="eb1eb279242cf6484f40d1a9c4a9dc86" target="08c6e03ee9c91db4808f07b69dfebfa5" xmi:id="a8b46fb48248629a219d7c8f73d63199">
+    </attributeMappings>
+    <attributeMappings source="072bf0af181a3f653db171440ea53698" target="8c13a96242659a68166eb6acd69b40cb" xmi:id="db96630ef8e3d461d00b64aa34270f6f">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="0feddea483a472178454ac11f94729f9" source="45ae6e12781353ec9c59177391dcee3e" target="8253dd349263b02897db64410fdf44ee">
+    <attributeMappings source="a11a9bc579ad15caac4328c9646e3197" target="a19fdac263c09912ec009f982ddfe915" xmi:id="dcb9f90885b8608db59035745fac8713">
+    </attributeMappings>
+    <attributeMappings source="29375a0df16ce54b343e8ebce5e70b96" target="240b767fb6fbb0b8774dea21ba31b0ba" xmi:id="bf518dfed7d3c575b4c4463406f3c477">
+    </attributeMappings>
+    <attributeMappings source="37d0545089856ca666cecd6accdd4534" target="eda69c927a93a44fde6adee1cf816b05" xmi:id="7cbbebb104ed5a20f1eb5c7a67d0ed3d">
+    </attributeMappings>
+    <attributeMappings source="90e6ddbb25900f924777b8f33d77894a" target="f2555586efc4d5c20864b52ece5a487b" xmi:id="5e24dbb68e4215508bce226acfb00c87">
+    </attributeMappings>
+    <attributeMappings source="becb901f72b4e8b69cae495fbdb1ebcb" target="05b17b9d8c9fad7d7f867d702d6e0220" xmi:id="9d8a238aa207130b21f103e28f1efd95">
+    </attributeMappings>
+    <attributeMappings source="31c2f7cc05cafa773960615725305801" target="aee2464e185bf4a1bb7fdcb5623aab57" xmi:id="90b1814c8541642fdd18662c856b459a">
+    </attributeMappings>
+    <attributeMappings source="9b645c3324e4d45083a6c4cba97c87e2" target="5277e4af8cf9c4201e5e1384d1c28990" xmi:id="bc037148f90a431df2f788709b91e14e">
+    </attributeMappings>
+    <attributeMappings source="8b746e093ad1672ac3b804baa9be590b" target="53b2e0ba672d10a21c82472105b6c8ef" xmi:id="2b47a93d7cde3028cf87d960791154a6">
+    </attributeMappings>
+    <attributeMappings source="e21c0f114fffdf5be2126f346fbeda45" target="a4d7434af1d856dc01dbcb5b4fcd613f" xmi:id="d55ebd090df5fcafa7582b8751307a5d">
+    </attributeMappings>
+    <attributeMappings source="601797dd2106f584683f0b0a2c40ff62" target="6623a7bdb3a38a75d901032ceef8f4db" xmi:id="aaef373dd8c47f68ba882c3eedaa5b6d">
+    </attributeMappings>
+    <attributeMappings source="cc3890c7137dffba2d0969d945f01634" target="920863cc391e4f339d041b39c60228e2" xmi:id="9c08ea33ed0e05ea7242079a2380a17c">
+    </attributeMappings>
+    <attributeMappings source="50efe667a4227b91e01e43afcd5dca3f" target="4b7bd98b7e0f3eb3130285d5df213c2c" xmi:id="c0fe39faef581c1e89944b45240e4b5b">
+    </attributeMappings>
+    <attributeMappings source="94ec4fbcf730983679d6d91d4983a66b" target="f44a1e87371ae72fd81d7efedc64ea23" xmi:id="741ee50710ca52ca36baf29d7f61c184">
+    </attributeMappings>
+    <attributeMappings source="8456f3d8d984e5dfca816207a5ca15ec" target="2c863146d0a497c8624fdaca54054fbe" xmi:id="af07361903051ce7740dfa64d5c1eddb">
+    </attributeMappings>
+    <attributeMappings source="bc17e22b58870ffadd0e79839c099144" target="fd132a29e67435e5fbc3f8d7b468b78a" xmi:id="ecf646e101caf005f1c24b686f360999">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>

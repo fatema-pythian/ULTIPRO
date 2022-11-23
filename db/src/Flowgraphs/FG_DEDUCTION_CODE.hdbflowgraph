@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="c35c86d2519be4290f8583777367f8b8" name="FG_DEDUCTION_CODE" runtimeBehavior="BATCH_TASK" targetSchema="ULTIPRO">
+  <annotations xmi:id="74ac608cf7802953dc389bce77f00035" key="sap.afm.layout">
+    <annotations xmi:id="d38eb4eab537dda1d0a9986ab3f67847" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="3af3749ed20b24c913a2811ca2555a88" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="4cbf24646f32874ff53d8bf4e0e38e2c" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="6611b2ea85ab9e8e21fb9f081658518f" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="8da7426aae6b05a05445942b550520b7" key="sap.afm.palette">
+    <annotations xmi:id="9b67a934928437e6deb82317c13b405b" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="c95b4042432903eae84a87805b3b94b2" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="8ba88c2fccea4def34d07eb7f7ae0167" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="aa26cfb2bea6eafa0772a629c6718775" key="sap.afm.nodeOutputs">
+    <annotations/>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="55739c8473a9d83e8ddd591770fe933f" name="GetDeductionCodes" type="VIRTUAL_FUNCTION" authoringSchemaName="ULTIPRO_VIRTUAL" catalogObjectName="GetDeductionCodes" truncateTable="false">
+    <annotations xmi:id="04403bdb16c2d8c202bcf26aca452c4b" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="d6751aee2e61eab0d4cb3d8606cfa3f5" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="4d7bdcf3bd33a55ee3fecd2c3906fd02" key="sap.afm.layout">
+      <annotations xmi:id="23ef14e417e8dacd814967a088855266" key="x" value="132">
+      </annotations>
+      <annotations xmi:id="b2a14b8b0c560cbcd9474ac834bf7504" key="y" value="63">
+      </annotations>
+      <annotations xmi:id="c1f71d4bde64cf7179e337c60a5a2d76" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="4cc7491b4f92bde2d6d08a3023de631d" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="b54d71c5c185a563beb51b9a043c7c6d" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="d74d76380ee9086ba712c49ff5765bb0" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="83b150c7e2b30684dded10074a83ffb5" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="98f43a10cba494102ce25a307acfc55c" key="sap.im.customParameters" value="">
+      <annotations xmi:id="98ccba0f2317e37fd849a351b94754b0" key="SOAP_REQUEST" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:out=&quot;http://www.outsystems.com&quot;&gt;  &lt;Body&gt;    &lt;out:GetDeductionCodes&gt;      &lt;out:Username&gt;sac_service_account&lt;/out:Username&gt;      &lt;out:Password&gt;ENTEReCAMOXi&lt;/out:Password&gt;    &lt;/out:GetDeductionCodes&gt;  &lt;/Body&gt;&lt;/soapenv:Envelope&gt;">
+      </annotations>
+    </annotations>
+    <outputs name="GetDeductionCodes_Output" kind="TABLE" xmi:id="1bd1d3c91ab2b85c1236f2cb4b73ae02">
+      <attributes xmi:id="8e0ab2e779507d0e4617e64022c1417d" name="SOAP_FAULT" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="0f1a12133589732956bfd86ae2802fa3" name="SOAP_HEADERS" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="3fcb8bdb70cf9c07514638ae01e655f8" name="SOAP_BODY" type="NCLOB" length="2147483647" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:HierarchicalNode" xmi:id="5497c42ddc7b7b49fabacc81bb8c9d29" name="DEDUCTION_CODE">
+    <annotations xmi:id="086bd92c48c3281f15845e16dc8d2b13" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="a2c48a156d11662f471fb4919b78fa65" key="sap.afm.layout">
+      <annotations xmi:id="c5f3375720790ecb2fb09696d083b6c1" key="x" value="333">
+      </annotations>
+      <annotations xmi:id="3de565cedda791d1fc6de317d98dd65f" key="y" value="58">
+      </annotations>
+      <annotations xmi:id="0d7bbd8d3cbf8624552f49544ceb8ed9" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="80eaa712e3e013b46938cceb8d23ad25" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="bb6e202c4a24a0e7c80eaa29c78b5371" key="sap.afm.nodeType" value="HierarchicalNode">
+    </annotations>
+    <annotations xmi:id="95e4648fcd84c888151e7a005604b8c2" key="sap.afm.nodeInputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="abc0df921b24666f1f3c5d653ce4d382" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="95fec5b657a4cb5dec2dc83bd384edc5" key="DEDUCTION_CODE" value="Template_DEDUCTION_CODE_Input"/>
+    </annotations>
+    <annotations xmi:id="cb8bae1ec45042cba9d2639be200c7f5" key="sap.im.propertyGroups">
+      <annotations xmi:id="c5befe737c89153457c8d7204cdda9c5" key="JSXSD" value="{&quot;GetDeductionCodesSoapOut&quot;: {&quot;_SAP_NS:ns0&quot;:&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;,&quot;_SAP_NS:ns1&quot;:&quot;http://www.outsystems.com&quot;,&quot;_SAP_nsPrefix&quot;:&quot;ns0&quot;,&quot;GetDeductionCodesResponse&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;Result&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;DeductionCode&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;src_deduction_codes&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MaxOccs&quot;:-1,&quot;_SAP_MinOccs&quot;:0,&quot;Deduction_Code&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;},&quot;Deduction_Desc&quot;: {&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_MinOccs&quot;:0,&quot;_SAP_nsPrefix&quot;:&quot;ns1&quot;,&quot;_SAP_XS_Type&quot;:&quot;string&quot;}}}}}}}">
+      </annotations>
+      <annotations xmi:id="35388a1675d9a3693655e6d7aca6d3d4" key="settings" value="&lt;hierarchicalTable elementName=&quot;GetDeductionCodesSoapOut&quot; xPath=&quot;/ns0:GetDeductionCodesSoapOut/&quot; namespacePrefix=&quot;ns0&quot; namespace=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;GetDeductionCodesResponse&quot; xPath=&quot;/ns0:GetDeductionCodesSoapOut/ns1:GetDeductionCodesResponse/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;Result&quot; xPath=&quot;/ns0:GetDeductionCodesSoapOut/ns1:GetDeductionCodesResponse/ns1:Result/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;DeductionCode&quot; xPath=&quot;/ns0:GetDeductionCodesSoapOut/ns1:GetDeductionCodesResponse/ns1:Result/ns1:DeductionCode/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalTable&gt;&lt;hierarchicalTable elementName=&quot;src_deduction_codes&quot; xPath=&quot;/ns0:GetDeductionCodesSoapOut/ns1:GetDeductionCodesResponse/ns1:Result/ns1:DeductionCode/ns1:src_deduction_codes/&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot; outputName=&quot;DEDUCTION_CODE&quot;&gt;&lt;hierarchicalColumn elementName=&quot;Deduction_Code&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;hierarchicalColumn elementName=&quot;Deduction_Desc&quot; xmlDatatype=&quot;string&quot; namespacePrefix=&quot;ns1&quot; namespace=&quot;http://www.outsystems.com&quot;&gt;&lt;/hierarchicalColumn&gt;&lt;/hierarchicalTable&gt;">
+      </annotations>
+    </annotations>
+    <inputs xmi:id="0b069192626ad4ccaf67f687c7d78e9d" name="DEDUCTION_CODE_Input1">
+      <attributes xmi:id="5374ae4a201bb8b39485263ce9776431" name="SOAP_FAULT" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="57eded97d941c35eaa79af41ed4b5980" name="SOAP_HEADERS" type="NVARCHAR" nullable="true" length="5000" scale="0">
+      </attributes>
+      <attributes xmi:id="d9d528adb51235fd1ede4d74261cf94a" name="SOAP_BODY" type="NCLOB" nullable="true" length="2147483647" scale="0" mappedName="XML">
+      </attributes>
+    </inputs>
+    <outputs name="DEDUCTION_CODE" kind="TABLE" xmi:id="23c5a3c2b45e7da22d01f464bdb97b33">
+      <attributes xmi:id="5bb701e69569dca19da4640fd8c538f1" name="TASK_ID" mappedName="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="71d03176d60e219982bb4b36427e90c9" name="ROW_ID" mappedName="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="772876f1c9b40bf32b2ce6f1abc05c5a" name="PARENT_KEY" mappedName="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="9c145059fd52be2a8a8bf690829f242a" name="KEY" mappedName="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="b28bb94cad639d7521e36e03418260fd" name="DEDUCTION_CODE" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Deduction_Code">
+      </attributes>
+      <attributes xmi:id="9118d97dbb384a872cece9557f61cc67" name="DEDUCTION_DESCRIPTION" type="NVARCHAR" nullable="true" length="5000" mappedName="ns1:Deduction_Desc">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="df61e3eaf5fbc254f4d31e3c03667a66" name="Template_DEDUCTION_CODE" type="TEMPLATE_TABLE" authoringSchemaName="ULTIPRO" catalogObjectName="DEDUCTION_CODE" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="8b35755d8f39a08bca35c73fae241cf0" key="sap.afm.layout">
+      <annotations xmi:id="f5854043db64a2af360d77ea0e86956b" key="x" value="664">
+      </annotations>
+      <annotations xmi:id="e24d48e26e3200681da469573f4269db" key="y" value="68">
+      </annotations>
+      <annotations xmi:id="7eb9eee0be833f631d126a2e5de9a541" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="4ac83317adfe6183f79c7bb720985834" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="c841424e5d6f1383175d2741248ed8d8" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="1c76f868182a48439d41eb14a3ca000a" key="sap.afm.nodeInputs">
+      <annotations xmi:id="e7d9fb5b715f87ade568e5edf9fcca9e" key="Template_DEDUCTION_CODE_Input" value="DEDUCTION_CODE"/>
+    </annotations>
+    <annotations xmi:id="b5186a11f222872115301283f9511a56" key="sap.afm.nodeOutputs">
+      <annotations>
+      </annotations>
+    </annotations>
+    <annotations xmi:id="cc0b4c1c9fc23125904ebbcd03a91046" key="sap.im.historyTable" value="">
+    </annotations>
+    <annotations xmi:id="f12e7a1150149ce4fee53b3977d71c5a" key="sap.im.writerType" value="upsert">
+    </annotations>
+    <annotations xmi:id="0ed6847a092274dbb3fb5bc028c091df" key="sap.im.logicalkeys" value="febf8de61997829c3b7c8a0e657443c2">
+    </annotations>
+    <inputs name="Template_DEDUCTION_CODE_Input" kind="TABLE" xmi:id="f1c430dc20d07447749e2f846caa499b">
+      <attributes xmi:id="4c9a583b13412e22d21edfc211a17325" name="TASK_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="ed478367a148b4a5012ee39a25eac520" name="ROW_ID" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="93932e7d34d9495cf45121f7566e7a5c" name="PARENT_KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="f77c021830fe3cd5eaef6f991fb4a873" name="KEY" type="BIGINT" nullable="true">
+      </attributes>
+      <attributes xmi:id="febf8de61997829c3b7c8a0e657443c2" name="DEDUCTION_CODE" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+      <attributes xmi:id="c50cfa176bd22ccd012a13f38320db28" name="DEDUCTION_DESCRIPTION" type="NVARCHAR" nullable="true" length="5000">
+      </attributes>
+    </inputs>
+  </nodes>
+  <tableMappings xmi:id="161b9333a3c6b1ada0670b6259897d71" source="1bd1d3c91ab2b85c1236f2cb4b73ae02" target="0b069192626ad4ccaf67f687c7d78e9d">
+    <attributeMappings source="8e0ab2e779507d0e4617e64022c1417d" target="5374ae4a201bb8b39485263ce9776431" xmi:id="626c8abc474bb51d3b69e0e9831a4210">
+    </attributeMappings>
+    <attributeMappings source="0f1a12133589732956bfd86ae2802fa3" target="57eded97d941c35eaa79af41ed4b5980" xmi:id="14bc31b3b4a1c6203ebd1946c1d3a1fd">
+    </attributeMappings>
+    <attributeMappings source="3fcb8bdb70cf9c07514638ae01e655f8" target="d9d528adb51235fd1ede4d74261cf94a" xmi:id="c4aa06c8d37e3e4ec2d1f894714f7ec0">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="1370b0fff6483b1205e760d4a3a3aef8" source="23c5a3c2b45e7da22d01f464bdb97b33" target="f1c430dc20d07447749e2f846caa499b">
+    <attributeMappings source="5bb701e69569dca19da4640fd8c538f1" target="4c9a583b13412e22d21edfc211a17325" xmi:id="60490b78aff320a5e18cd1c58336688f">
+    </attributeMappings>
+    <attributeMappings source="71d03176d60e219982bb4b36427e90c9" target="ed478367a148b4a5012ee39a25eac520" xmi:id="6630832b1c80f3455209b6de8d1ec19f">
+    </attributeMappings>
+    <attributeMappings source="772876f1c9b40bf32b2ce6f1abc05c5a" target="93932e7d34d9495cf45121f7566e7a5c" xmi:id="a9c09e5f94d0d2a9a82bf441bbff88d9">
+    </attributeMappings>
+    <attributeMappings source="9c145059fd52be2a8a8bf690829f242a" target="f77c021830fe3cd5eaef6f991fb4a873" xmi:id="92963d07d436f47411de7082e6602c8d">
+    </attributeMappings>
+    <attributeMappings source="b28bb94cad639d7521e36e03418260fd" target="febf8de61997829c3b7c8a0e657443c2" xmi:id="820cc0d91d59ee4b524bf0484ea9a27b">
+    </attributeMappings>
+    <attributeMappings source="9118d97dbb384a872cece9557f61cc67" target="c50cfa176bd22ccd012a13f38320db28" xmi:id="585c37291f87e391074f518a658868db">
+    </attributeMappings>
+  </tableMappings>
+</flowgraph:ContainerNode>
